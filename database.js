@@ -1,10 +1,7 @@
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', false);
 const Schema = mongoose.Schema
-mongoose.connect(process.env.database, { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
-  if (err) return console.log("Erro ao se conectar com a database!\n" + err)
-  console.log('Database conectada!')
-})
+mongoose.connect(process.env.database)
 
 const info = new Schema({
   _id: {
