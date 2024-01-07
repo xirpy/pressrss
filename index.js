@@ -16,3 +16,5 @@ app.use('/9anime', animeto)
 
 
 app.listen(4000);
+
+module.exports = app
